@@ -1,0 +1,1 @@
+import{o,c as n,a as s,G as r}from"./app-JnpFVuSp.js";const a={class:"min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"},l={class:""},_={__name:"GuestLayout",setup(c){return(t,e)=>(o(),n("div",a,[e[0]||(e[0]=s("div",null,null,-1)),s("div",l,[r(t.$slots,"default")])]))}};export{_};
