@@ -47,7 +47,7 @@
                             <p class="ml-2">Dashboard</p>
                         </a>
                     </li>
-                    <li class="nav-item " v-if="['Super Admin', 'admin'].includes(userRole)">
+                    <li class="nav-item menu-open" v-if="['Super Admin', 'admin'].includes(userRole)">
                         <a :href="route('admin.products')" method="post" class="nav-link">
                             <img src="/images/icon/Product.svg" alt="" width="22px" height="22px" />
                             <p class="ml-2">Products
@@ -87,31 +87,31 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item menu-open">
                         <a :href="route('admin.warehouse')" method="post" class="nav-link">
                             <img src="/images/icon/warehouse.svg" alt="" width="22px" height="22px" />
                             <p class="ml-2">Warehouse</p>
                         </a>
                     </li>
-                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item">
+                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item menu-open">
                         <a :href="route('admin.showSupplier')" method="post" class="nav-link">
                             <img src="/images/icon/supplier.svg" alt="" width="22px" height="22px" />
                             <p class="ml-2">Supplier</p>
                         </a>
                     </li>
-                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item">
+                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item menu-open">
                         <a :href="route('admin.show.ref')" method="post" class="nav-link">
                             <img src="/images/icon/sale ref.svg" alt="" width="22px" height="22px" />
                             <p class="ml-2">Sales Ref</p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item menu-open">
                         <a :href="route('admin.show.shop')" method="post" class="nav-link">
                             <img src="/images/icon/shop.svg" alt="" width="22px" height="22px" />
                             <p class="ml-2">Shop</p>
                         </a>
                     </li>
-                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item ">
+                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item menu-open">
                         <a :href="route('admin.perches')" method="post" class="nav-link">
                             <img src="/images/icon/Purchase.svg" alt="" width="22px" height="22px">
                             <p class="ml-2">
@@ -134,7 +134,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item menu-open">
                         <a :href="route('admin.Sales')" class="nav-link side-bar-nav-link">
                             <img src="/images/icon/sale.svg" alt="">
                             <p class="ml-2">Sales
@@ -159,7 +159,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item">
+                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item menu-open">
                         <a href="#" class="nav-link side-bar-nav-link">
                             <img src="/images/icon/payment.svg" alt="">
                             <p class="ml-2">Payments
@@ -184,7 +184,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item">
+                    <li v-if="['Super Admin', 'admin'].includes(userRole)" class="nav-item menu-open">
                         <a :href="route('admin.Sales')" class="nav-link side-bar-nav-link">
                             <img src="/images/icon/report.svg" alt="">
                             <p class="ml-2">Reports
